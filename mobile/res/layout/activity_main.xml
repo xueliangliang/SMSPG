@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/login_p_block"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone Number:"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/phoneEdt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="phone" >
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Server:"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/serverEdt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ems="10" />
+
+            <Button
+                android:id="@+id/startServiceBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:text="Start Service"
+                android:textAppearance="?android:attr/textAppearanceMedium" >
+            </Button>
+
+            <Button
+                android:id="@+id/stopServiceBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:text="Stop Service"
+                android:textAppearance="?android:attr/textAppearanceMedium" >
+            </Button>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
